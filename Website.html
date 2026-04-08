@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Startup</title>
+
+  <style>
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* CONTAINER */
+    .container {
+      width: 900px;
+      margin: 40px auto;
+    }
+
+    /* BANNER */
+    .banner {
+      background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+      url('https://images.unsplash.com/photo-1518770660439-4636190af475');
+      background-size: cover;
+      background-position: center;
+      padding: 150px 0;
+      color: white;
+      text-align: center;
+    }
+
+    .banner h1 {
+      font-size: 50px;
+      margin-bottom: 10px;
+    }
+
+    .banner h2 {
+      font-weight: lighter;
+      opacity: 0.9;
+    }
+
+    /* BUTTON */
+    .btn-green {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-green:hover {
+      background-color: #3e8e41;
+    }
+
+    /* CARDS GRID */
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      flex-basis: 250px;
+      flex-grow: 1;
+    }
+
+    .card img {
+      width: 120px;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      padding-left: 20px;
+    }
+
+    /* LOGIN */
+    .login-card {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .login-card input {
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      font-size: 16px;
+    }
+
+    /* TEXT */
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #555;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- BANNER -->
+  <div class="banner">
+    <h1>My Startup 🚀</h1>
+    <h2>We build amazing products</h2>
+    <a href="#" class="btn-green">Start now</a>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="container">
+    <h2>Our Product 🚀</h2>
+    <p>We create innovative digital solutions to help businesses grow and succeed.</p>
+  </div>
+
+  <!-- LOCATIONS -->
+  <div class="container">
+    <h2>Our Locations 🌍</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34">
+        <h3>Paris</h3>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad">
+        <h3>London</h3>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade">
+        <h3>New York</h3>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FEATURES -->
+  <div class="container">
+    <h2>Features ⚡</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Fast ⚡</h3>
+      </div>
+
+      <div class="card">
+        <h3>Simple 👍</h3>
+      </div>
+
+      <div class="card">
+        <h3>Secure 🔒</h3>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="container">
+    <h2>Contact 📩</h2>
+    <a href="#" class="btn-green">Get in touch</a>
+  </div>
+
+  <!-- LOGIN -->
+  <div class="container">
+    <h2>Login 🔐</h2>
+
+    <div class="card login-card">
+      <form>
+
+        <input type="email" placeholder="Your email" required>
+        <input type="password" placeholder="Your password" required>
+
+        <button type="submit" class="btn-green">Login</button>
+
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>

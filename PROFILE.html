@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Profile</title>
+  <meta charset="UTF-8">
+
+  <style>
+
+    body {
+      background-color: #1a1a1a;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      position: fixed;
+      width: 200px;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background-color: #111;
+      padding-top: 30px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding-left: 0;
+      text-align: center;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 15px;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #4CAF50;
+    }
+
+    /* PAGE CONTENT */
+    .page-content {
+      margin-left: 200px;
+    }
+
+    /* CONTAINER */
+    .container {
+      width: 700px;
+      margin: 40px auto;
+    }
+
+    /* CARDS */
+    .card-white {
+      background-color: white;
+      padding: 30px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    /* IMAGE */
+    .img-circle {
+      width: 120px;
+      border-radius: 50%;
+    }
+
+    /* TEXT */
+    h1, h2 {
+      font-weight: bold;
+    }
+
+    h2 {
+      color: #4CAF50;
+    }
+
+    p {
+      color: #555;
+    }
+
+    /* BUTTON */
+    .btn-green {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .btn-green:hover {
+      background-color: black;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <ul>
+      <li><a href="#about">About me</a></li>
+      <li><a href="#ux">UX Design</a></li>
+      <li><a href="#front">Front Development</a></li>
+      <li><a href="#motorbikes">Motorbikes</a></li>
+    </ul>
+  </div>
+
+  <!-- PAGE CONTENT -->
+  <div class="page-content">
+
+    <div class="container">
+
+      <!-- ABOUT -->
+      <div class="card-white" id="about">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="img-circle">
+        <h1>Hello, this is my profile 😎</h1>
+        <p>
+          I am a Bachelor student at Audencia.<br>
+          I am learning web development 💻
+        </p>
+        <a href="#" class="btn-green">Discover more</a>
+      </div>
+
+      <!-- UX -->
+      <div class="card-white" id="ux">
+        <h2>UX Design 🎨</h2>
+        <p>I am interested in user experience and interface design.</p>
+      </div>
+
+      <!-- FRONT -->
+      <div class="card-white" id="front">
+        <h2>Front Development 💻</h2>
+        <p>I am learning HTML, CSS and JavaScript.</p>
+      </div>
+
+      <!-- MOTORBIKES -->
+      <div class="card-white" id="motorbikes">
+        <h2>Motorbikes 🏍️</h2>
+        <p>I love speed and mechanics.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
